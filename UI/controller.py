@@ -6,7 +6,10 @@ class Controller:
         self._model = model
 
     def handle_statistiche(self, e):
-        pass
+        serate = int(self._view.dd_serate.value)
+        risultato = self._model.get_staistiche(serate)
+        self._view.mostra(risultato)
 
     def handle_programma(self, e):
-        pass
+        serate =  int(self._view.dd_serate.value)
+        risultato = self._model.get_programma_ottimo(serate)
