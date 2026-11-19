@@ -40,7 +40,7 @@ class Dao:
 
                 result = []
                 for r in cursor:
-                    result.append(f"{r['genere']}], {r['numero_film']}, {r['media_voti']}")
+                    result.append(f"{r['genere']}, {r['numero_film']}, {r['media_voti']}")
                 return result
 
             finally:

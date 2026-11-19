@@ -15,7 +15,6 @@ class View:
     def load_interface(self):
         self.dd_serate = ft.Dropdown(
             label='Numero di serate', width=210,
-            on_change=self.controller.handle_statistiche
         )
         self.dd_serate.options.append(ft.dropdown.Option(6, 'Sei'))
         self.dd_serate.options.append(ft.dropdown.Option(9, 'Nove'))
